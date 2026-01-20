@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booksky app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar"><center>
+            <h1>BOOKSKY APP</h1></center>
+        </div>
+        <div class="container">
+            <div class="book-container">
+                <h2>Rich Dad Poor Dad</h2>
+                <h4>Robert Kiyosaki </h4>
+                <p>A landmark personal finance book that challenges conventional wisdom about money, investing, and working for a living. First published in 1997, it advocates for financial literacy—understanding how money works—and argues that the key to wealth is having your money work for you, rather than working for money. </p>
+                <button onclick="deletebook(event)">Delete</button>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="popup">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book Title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Short Description" id="book-description-input"></textarea>
+                <button id="add-book">ADD</button>
+                <button id="cancel-popup">CANCEL</button>
+            </form>
+        </div>
+        <button class="add-button" id="add-popup-button">+</button>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
+
